@@ -97,11 +97,17 @@ body {
     #videoElement {
         left: 5px;
     }
+}
+
+@media only screen and (max-width: 650px) {
     #localVideo {
         width: 130px;
         height: 165px;
-        bottom: 20px;
-        right: 30px;
+        bottom: 15px;
+        right: 15px;
+    }
+    #videos{
+        padding: 5px;
     }
 }
 
