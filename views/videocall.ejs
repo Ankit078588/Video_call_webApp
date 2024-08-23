@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Call</title>
+    <script src="https://kit.fontawesome.com/48b27409dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/videocall.css">
+</head>
+
+<body>
+    <div id="videos">
+        <video class="video-player" id="localVideo" autoplay muted playsinline></video>
+        <video class="video-player" id="remoteVideo" autoplay playsinline></video>
+    </div>
+
+    <div id="screenContainer">
+
+    </div>
+
+    <div id="controls-section">
+        <div class="control-container" id="Buttons-container">
+            <span class="video-icon"><i class="fa-solid fa-video"></i></span>
+            <span class="microphone-icon"><i class="fa-solid fa-microphone"></i></span>
+            <span class="share-icon"> <i class="fa-solid fa-up-right-from-square share-screen"></i> </span>
+            <span class="message-icon"> <i class="fa-solid fa-message"></i> </span>
+            <span class="phone-icon"> 
+                <a href="/callended"><i id="end-call-button" class="fa-solid fa-phone"></i></a> 
+            </span>
+        </div>
+    </div>
+
+    <div id="chat_box">
+        <div id="chat_box_headline">
+            <span>In call messages</span>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <p id="tagline">Message can only be seen by people in call, when the <br> message is sent. Stay happy, keep
+            chatting!</p>
+
+        <form action="">
+            <div id="chat_area" class="messages">
+                
+            </div>
+            
+            <div id="input_box_wrapper">
+                <input id="input_box" type="text" placeholder="Send a message">
+                <i class="fa-regular fa-paper-plane send_btn"></i>
+            </div>
+        </form>
+    </div>
+
+    <br> <br> <br>
+
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+        integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous">
+        </script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
