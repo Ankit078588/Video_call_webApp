@@ -97,6 +97,12 @@ body {
     #videoElement {
         left: 5px;
     }
+    #localVideo {
+        width: 130px;
+        height: 165px;
+        bottom: 20px;
+        right: 30px;
+    }
 }
 
 /* --------------------- chat box ---------------------- */
